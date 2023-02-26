@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="richiesuper">
+	<meta name="description" content="Simple news website.">
+	<meta name="keywords" content="news, information, web, digital, html, css">
+	<title>Berita Pagi - Richie Seputro</title>
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url('assets/images/bg.jpg');
+			background-repeat: repeat;
+			background-size: 200px;
+		}
+
+		div.wrapper {
+			width: 65%;
+			margin: auto;
+			padding: 10px;
+			border: 1px solid black;
+			backdrop-filter: blur(2px);
+		}
+
+		h1, h2 {
+			text-decoration: underline;
+		}
+
+		.side h3 {
+			font-weight: normal;
+		}
+
+		.commentator {
+			padding-left: 15px;
+		}
+
+		span.orange {
+			color: orange;
+		}
+
+		nav > ul {
+			display: flex;
+			align-items: center;
+			list-style-type: none;
+			border: 1px solid black;
+			padding: 0;
+		}
+
+		nav > ul > li {
+			border: 1px solid black;
+			flex: 1;
+			text-align: center;
+			padding: 1rem 0;
+			font-size: 1.2rem;
+		}
+
+		nav > ul > li:hover {
+			background-color: gold;
+		}
+
+		nav a {
+			color: black;
+			text-decoration: none;
+		}
+
+		nav a:visited {
+			color: black;
+		}
+
+		main {
+			display: flex;
+		}
+
+		section.utama {
+			flex: 2;
+			padding: 0px 10px;
+			border: solid black;
+			border-width: 1px 0px 1px 1px;
+		}
+
+		section.side {
+			flex: 1;
+		}
+
+		div.container {
+			display: flex;
+		}
+
+		div.thumbnail {
+			flex: 1;
+			margin-right: 15px;
+		}
+
+		div.description {
+			flex: 1;
+		}
+
+		div.thumbnail > img {
+			width: 100%;
+		}
+
+		section.side {
+			font-size: 0.85rem;
+			padding: 0px 10px;
+			border: 1px solid black;
+		}
+
+		footer.copyright {
+			margin-top: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Berita <span class="orange">Pagi</span></h1>
+			<nav>
+				<ul>
+					<li><a href="#">Beranda</a></li>
+					<li><a href="#trending">Trending</a></li>
+					<li><a href="#politik">Politik</a></li>
+					<li><a href="#keuangan">Keuangan</a></li>
+					<li><a href="#kriminal">Kriminal</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="utama">
+				<div id="trending">
+					<h2>Trending</h2>
+					<div class="container">
+						<div class="thumbnail">
+							<img src="assets/images/sambo.jpeg">
+						</div>
+						<div class="description">
+							<h3>Ferdy Sambo Divonis Hukuman Mati</h3>
+							<p>Dilansir dari <i>cnnindonesia.com</i>: Hakim telah menjatuhkan vonis hukuman mati terhadap terdakwa pembunuhan berencana Brigadir J, Ferdy Sambo. ...</p>
+						</div>
+					</div>
+				</div>
+				<div id="politik">
+					<h2>Politik</h2>
+					<div class="container">
+						<div class="thumbnail">
+							<img src="assets/images/anies.jpeg">
+						</div>
+						<div class="description">
+							<h3>Anies Pinjam Slogan DKI Jakarta di Pilpres 2024</h3>
+							<p>Dilansir dari <i>cnnindonesia.com</i>: Anies Baswedan mengatakan akan membawa tagline atau slogan baru milik Pemerintah Provinsi DKI Jakarta 'Sukses Jakarta untuk Indonesia' untuk menghadapi Pemilu 2024. ...</p>
+						</div>
+					</div>
+				</div>
+				<div id="keuangan">
+					<h2>Keuangan</h2>
+					<div class="container">
+						<div class="thumbnail">
+							<img src="assets/images/ericsson.jpeg">
+						</div>
+						<div class="description">
+							<h3>Ericsson Akan PHK 8.500 Karyawan secara Global</h3>
+							<p>Dilansir dari <i>cnnindonesia.com</i>: Perusahaan teknologi telekomunikasi Ericsson berencana melakukan PHK terhadap 8.500 karyawan secara global. ...</p>
+						</div>
+					</div>
+				</div>
+				<div id="kriminal">
+					<h2>Kriminal</h2>
+					<div class="container">
+						<div class="thumbnail">
+							<img src="assets/images/mario.jpeg">
+						</div>
+						<div class="description">
+							<h3>Mario Dandy Penganiaya David Resmi Ditahan</h3>
+							<p>Dilansir dari <i>cnnindonesia.com</i>: Mario Dandy, anak pejabat Dirjen Pajak yang melakukan penganiayaan terhadap anak pengurus GP Ansor, David, telah dinyatakan sebagai tersangka dan ditahan. ...</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="side">
+				<aside class="berita-hot">
+					<h2>Berita Hot</h2>
+					<h3>Mario Dandy Penganiaya David Resmi Ditahan</h3>
+					<h3>Ferdy Sambo Divonis Hukuman Mati</h3>
+				</aside>
+				<aside class="komentar-teratas">
+					<h2>Komentar Teratas</h2>
+					<h3>Mana mungkin seorang pegawai Eselon III Dirjen Pajak memiliki harta sebanyak itu?<br><span class="commentator">Anonymous -- Mario Dandy...</span></h3>
+					<h3>Keadilan telah ditegakkan!<br><span class="commentator">Anonymous -- Ferdy Sambo...</span></h3>
+				</aside>
+			</section>
+		</main>
+		<footer class="copyright">
+			<!-- Copyright notice -->
+			&copy; 2023 Richie Seputro
+		</footer>
+	</div>
+</body>
+</html>
